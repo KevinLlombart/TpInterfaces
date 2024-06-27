@@ -1,0 +1,585 @@
+.container{
+    position: relative;
+}
+
+
+.body-descripcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+#form {
+  
+    margin: 0 auto;
+    
+   
+  }
+  
+  #form p {
+    text-align: center;
+  }
+  
+  #form label {
+    font-size: 20px;
+  }
+  
+  input[type="radio"] {
+    
+    display: none;
+  }
+  
+  label {
+    font-size: 30px; 
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+ .button-color{
+    background-color: #1FBF92;
+    border: #1FBF92;
+ }
+ .color-texto:hover {
+   color: #1FBF92 !important;
+text-decoration: none;
+ }
+ .button-color:hover{
+    background-color: #89D9C2;
+    border: #1FBF92;
+ }
+  
+  input[type="radio"]:checked ~ label ~ label {
+    color: grey;
+}
+
+#form input[type="radio"]:checked + label,
+input[type="radio"]:checked + label ~ label {
+    color: orange;
+}
+
+.titulo-descripcion{
+   font-size: 2.4rem;
+
+}
+.b-inscripcion{
+    width: 10em;
+    font-weight: 500;
+    background-color: #1FBF92;
+}
+.precio {
+    font-size: 3vw; 
+    font-weight: bold;
+    color: #ffffff;
+}
+@media (max-width: 576px) {
+    .precio {
+        font-size: 6vw; /* Un poco más grande en pantallas pequeñas */
+    }
+}
+
+/* Pantallas medianas (tabletas) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .precio {
+        font-size: 4.5vw; /* Ajuste para pantallas medianas */
+    }
+}
+
+/* Pantallas grandes (escritorios) */
+@media (min-width: 769px) {
+    .precio {
+        font-size: 3vw; /* Más pequeño en pantallas grandes */
+    }
+}
+.favorito {
+    display: flex;
+    align-items: center;
+    
+}
+
+.favorito label {
+  margin-top: 5px;
+    font-size: 30px; /* Ajusta el tamaño del corazón según sea necesario */
+    color: rgba(255, 0, 0, 0.692); /* Color rojo para el corazón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el corazón */
+}
+
+.favorito label:hover {
+    color: darkred; /* Color más oscuro al pasar sobre el corazón */
+}
+
+.card-header {
+background-color: #ffffff;
+    border: 1px solid #ffffff; /* Borde del header */
+   
+    position: relative; /* Posición relativa para alinear el icono */
+}
+
+.segunda-seccion {
+  
+    margin-top: 90px; padding-bottom: 90px;
+
+}
+
+.card {
+    border: 1px solid #ffffff; /* Borde de la tarjeta */
+  
+}
+
+.card-header .collapse-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    cursor: pointer; /* Cambia el cursor al señalar */
+}
+
+.botonDescripcion:focus {
+    box-shadow: none;
+    text-decoration: none;
+}
+
+
+
+.collapse-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.accordion .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion .card-header h5 {
+    flex-grow: 1;
+}
+
+.accordion .card-header button {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.accordion .card-header img {
+    transition: transform 0.2s;
+}
+
+.accordion .card-header[aria-expanded="true"] .collapse-icon {
+    transform: rotate(180deg);
+}
+
+.content-section {
+    margin: 20px 0;
+}
+.unit {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.unit-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.unit-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.unit-content {
+    display: flex;
+    align-items: center;
+}
+.unit-content ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+.unit-content ul li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.unit-content ul li i {
+    margin-right: 8px;
+}
+.separator {
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.vertical-container {
+    background-color: #89d9c2;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 40%; 
+   
+    margin: auto; 
+}
+.info-item.bold {
+    font-weight: bold;
+    color: #007bff; 
+}
+.vertical-container .info-item {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+.info-item img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+.featured-course {
+    background-color: #ffcc00;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+
+
+.title-section {
+    text-align: center;
+    margin-top: 50px;
+}
+.subtitle-section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+ }
+ #form input[type="radio"]:checked + label,
+ input[type="radio"]:checked + label ~ label {
+        color: orange;
+ }
+
+#form {
+    margin: 0 auto;
+}
+
+#form p {
+text-align: center;
+}
+
+#form label {
+font-size: 20px;
+}
+
+input[type="radio"] {
+display: none;
+}
+
+/* Estilo para el botón de búsqueda */
+
+
+
+
+.card-curso {
+    max-width: 18rem; /* Ancho máximo personalizado para las cartas */
+    margin: 0 auto; /* Centra las cartas horizontalmente */
+    border: none; /* Quita el borde de las cartas */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+    transition: transform 0.2s ease; /* Transición suave al pasar el mouse */
+}
+
+.search-box {
+    max-width: 300px;
+}
+.custom-card-width {
+    margin: 1rem;
+}
+
+.card-body p {
+    font-size: 1rem;
+}
+
+.card-body .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-body .clasificacion {
+    text-align: center;
+}
+
+.card-body h5 {
+    text-align: center;
+}
+
+.card-body img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.info-item img {
+    margin-right: 0.5rem; /* Ajusta el margen derecho según sea necesario */
+    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+}
+.company-logos {
+    display: flex;
+    justify-content:  space-evenly; /* Opcional: puedes usar space-between, space-evenly o flex-start según tus necesidades */
+    align-items: center;
+    margin-top: 10px;
+}
+
+.company-logos img {
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantén la proporción de la imagen */
+    margin: 0 10px; /* Espacio entre las imágenes */
+}
+.vertical-container {
+    text-align: center; /* Centra el texto */
+}
+#about {
+    background: url('/img/asp-net-curso.webp') no-repeat center center;
+    background-size: cover;
+    color: white; /* Cambia el color del texto para que sea legible sobre la imagen de fondo */
+}
+
+.duracion {
+   width: 10em;
+    background-color: #ffcc00;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-self: flex-end;
+    position: absolute;
+    top: 0;
+    margin: 20px;
+    
+   right: 0px;
+  
+}
+
+
+#about .container {
+    background: rgba(0, 0, 0, 0.5); /* Añade una capa de color de fondo semitransparente para mejorar la legibilidad del texto */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    .duracion {
+        font-size: 0.9rem; /* Tamaño de fuente para pantallas medianas */
+        padding: 8px;
+    }
+}
+
+@media (max-width: 992px) {
+    .duracion {
+        font-size: 0.8rem; /* Tamaño de fuente para pantallas pequeñas */
+        padding: 6px;
+    }
+}
+
+@media (max-width: 768px) {
+    .duracion {
+        font-size: 0.7rem; /* Tamaño de fuente para pantallas muy pequeñas */
+        padding: 4px;
+    }
+}
+
+@media (max-width: 576px) {
+    .duracion {
+       
+        font-size: 0.9rem; /* Tamaño de fuente para pantallas extra pequeñas */
+        padding: 4px;
+    }
+}
+    @media (max-width: 576px) {
+        .row {
+            flex-direction: column-reverse; /* Cambia la dirección de la fila en dispositivos móviles */
+        }
+    
+        .col-md-8 {
+            margin-top: 1rem; /* Ajusta el margen superior según sea necesario */
+            margin-bottom: 2rem; /* Ajusta el margen inferior para separación */
+        }
+        
+    .unit-circle{
+        margin: 1rem;
+    }
+        .col-md-4 {
+            order: -1; /* Cambia el orden para colocar el col-md-4 debajo en dispositivos móviles */
+        }
+    }
+
+@media (max-width: 576px) {
+    .custom-card-width {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .segunda-seccion {
+        margin-top: 2rem; 
+    }
+
+    .card-header {
+        padding: 0.5rem 1rem; /* Ajusta el padding de los encabezados de las tarjetas */
+    }
+
+    .card-body {
+        padding: 0.5rem 1rem; /* Ajusta el padding del cuerpo de las tarjetas */
+    }
+}
+@media (max-width: 576px) {
+    .custom-card-width {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .card-body .price {
+        font-size: 1.2rem;
+    }
+
+    .card-body p {
+        font-size: 0.9rem;
+    }
+} 
+@media (max-width: 576px) {
+    .unit {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+.tl{
+    text-align: center;
+}
+    .content-container {
+        text-align: center;
+        width: 100%;
+    }
+
+    .unit-circle{
+        margin-left: 8.6rem;
+    }
+
+    .unit-content ul li {
+        margin-left: 2rem;
+        justify-content: center;
+    }
+
+  
+
+    .unit {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .content-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-md-8, .col-md-4 {
+        margin-top: 0;
+    }
+
+    .col-md-4 {
+        order: -1;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 576px) {
+    .titulo {
+        font-size: 40px; 
+        margin-top: 0.5em;
+       
+    }
+
+    .estrellas {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .col-md-4 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .col-md-4 img {
+        margin-bottom: 20px;
+    }
+
+    .card-header {
+        padding: 10px; /* Reducir padding del header en dispositivos móviles */
+    }
+
+    .card-body {
+        padding: 10px; /* Reducir padding del cuerpo en dispositivos móviles */
+    }
+
+    .card {
+        margin-bottom: 15px; /* Espaciado entre tarjetas en dispositivos móviles */
+    }
+}
+
+ 
+        @media (max-width: 576px) {
+            .custom-card-width {
+                max-width: 100%;
+                margin-bottom: 1rem;
+            justify-content: center;
+            }
+        
+            .card-curso {
+                width: 100%;
+                justify-content: center;
+            
+            }
+        
+            .card-img-top {
+                width: 100%;
+                height: auto;
+                justify-content: center;
+            }
+         
+            }
+        
+    
+
+
+
