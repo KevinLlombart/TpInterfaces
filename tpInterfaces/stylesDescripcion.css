@@ -1,7 +1,8 @@
+
+
 .container{
     position: relative;
 }
-
 
 .body-descripcion {
     display: flex;
@@ -10,11 +11,137 @@
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    margin: 0;
     padding: 0;
+  
     width: 100%;
 }
+.custom-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #042159;
+    padding: 20px 20px; /* Ajuste aquí el padding para cambiar la altura */
+    width: 100%; /* Ensure navbar takes the full width */
+    box-sizing: border-box; 
+}
 
+.custom-navbar .custom-title {
+    color: #fff;
+    font-size: 24px;
+    display: flex; /* Para alinear el ícono correctamente */
+    align-items: center; /* Alinea verticalmente el texto e ícono */
+}
+
+.custom-navbar .icon-container {
+    margin-left: 10px; /* Espacio entre el título y el ícono */
+}
+
+.custom-navbar, .icono {
+    height: 100px; /* Ajusta el tamaño del ícono según sea necesario */
+}
+
+.custom-menu-icon {
+    display: none;
+}
+
+.custom-navbar .custom-links {
+    display: flex;
+    gap: 20px;
+}
+
+.custom-navbar .custom-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.custom-navbar .custom-links a:hover {
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .arrow-down {
+    margin-left: 5px;
+    color: #fff;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #042159;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #042159;
+}
+
+.icono {
+    width: 80px;
+    height:80px;
+}
+
+.navtitulo {
+    color:#fff;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.navcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+
+    
+}
+
+.footerimg{
+    width: 50px;
+    padding-left: 10%;
+}
+
+footer {
+    width: 90vw !important;
+}
+
+@media (max-width: 568px) {
+    .custom-navbar .custom-links {
+        flex-direction: column;
+        width: 500px;
+        display: none;
+    }
+    
+    .custom-navbar .custom-menu-icon {
+        display: block;
+        cursor: pointer;
+        color: #fff;
+        font-size: 24px;
+    }
+}
+
+.custom-navbar.responsive .custom-links {
+    display: flex;
+
+}
 
 #form {
   
@@ -307,9 +434,6 @@ input[type="radio"] {
 display: none;
 }
 
-/* Estilo para el botón de búsqueda */
-
-
 
 
 .card-curso {
@@ -370,10 +494,11 @@ display: none;
     text-align: center; /* Centra el texto */
 }
 #about {
-    background: url('/img/asp-net-curso.webp') no-repeat center center;
+    background: url('img/asp-net-curso.webp') no-repeat center center;
     background-size: cover;
     color: white; /* Cambia el color del texto para que sea legible sobre la imagen de fondo */
 }
+
 
 .duracion {
    width: 10em;
@@ -580,6 +705,29 @@ display: none;
             }
         
     
+.error{
+    background-color: #ccc; 
+    color: #666; 
+    cursor: not-allowed; 
+    pointer-events: none;
+}
 
+
+.error-message {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    background-color: rgba(255, 0, 0, 0.701); /* Red background color */
+    color: white; /* White text color */
+    padding: 15px; /* Some padding */
+    text-align: center; /* Centered text */
+    margin-top: 20px; /* Some margin on top */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.error-message img {
+    width: 30px; /* Set a specific width */
+    height: 30px;
+    margin-right: 10px; /* Space between image and text */
+}
 
 
