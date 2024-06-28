@@ -27,6 +27,11 @@
             <a href="#contact">Contacto</a>
         </div>
     </div>
+    <div class="subtitle-wrapper" style="display: flex; align-items: end; justify-content: end;">
+        <div class="search-box">
+            <input type="text" class="form-control" placeholder="Search courses...">
+        </div>
+    </div>
 
     <div class="title-section" style="margin-left: 2rem;">
         <h1 class="text-left">Descubre nuestra variedad de cursos de programación y comienza tu viaje hacia el dominio del código hoy mismo.</h1>
@@ -38,14 +43,8 @@
                 <p>Mas populares</p>
             </div>
         </div>
-        <div class="subtitle-wrapper" style="display: flex; align-items: end; justify-content: end;">
-            <div class="search-box">
-                <input type="text" class="form-control" placeholder="Search courses...">
-            </div>
-        </div>
     </div>
-
-    <!-- Carousel Section -->
+    <!-- arousel Section -->
     <div class="carousel-wrapper">
         <div class="card-deck">
             <div class="card">
@@ -483,5 +482,90 @@
     .icon-right {
         right: -4rem; /* Ajusta la posición del icono derecho */
     }
+
+    @media (max-width: 768px) {
+    .custom-navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .custom-menu-icon {
+        display: block;
+        margin-left: auto;
+        margin-top: 0.5rem;
+    }
+
+    .custom-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .search-box {
+        width: 100%;
+        padding: 1rem;
+        margin: 1rem 0; /* Margin around the search box */
+    }
+
+    .search-box .form-control {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.5rem; /* Larger font size */
+        padding: 0.5rem 1rem; /* Larger padding */
+    }
+
+    .title-section {
+        padding: 1rem;
+        font-size: 1.5rem; /* Reduced font size */
+    }
+
+    .subtitle_carrousel {
+        padding: 0.5rem;
+        font-size: 1.2rem; /* Reduced font size */
+        text-align: center; /* Center the subtitle */
+    }
+
+    .card-deck {
+        display: flex;
+        flex-wrap: nowrap; /* Keep cards in a line */
+        overflow-x: auto; /* Allow horizontal scrolling */
+        scroll-snap-type: x mandatory; /* Smooth scrolling */
+    }
+
+    .card {
+        width: 80%; /* Reduced width */
+        margin: 1rem 0.5rem; /* Adjusted margin */
+        flex: 0 0 auto; /* Prevent cards from resizing */
+        scroll-snap-align: start; /* Initial alignment for scrolling */
+    }
+
+    .card img {
+        width: 100%; /* Adjust image to 100% of card width */
+    }
+
+    .card-body {
+        font-size: 0.9rem; /* Reduced font size */
+    }
+
+    .card-title {
+        text-align: center; /* Center the title */
+    }
+
+    .seccion-iconos {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .icon-text {
+        margin: 1rem 0;
+    }
+
+    /* Remove sliding icons */
+    .icon-left, .icon-right {
+        display: none;
+    }
+}
+
 </style>
 </html>
