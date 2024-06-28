@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body{
-    margin-top: 80px;
     background:#eee;
+    font-family: 'Montserrat', sans-serif;
 }
 .gradient-brand-color {
     background-image: -webkit-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
@@ -16,19 +18,9 @@ body{
     background-color: #1fbf92;
 }
 
-.navbar {
-    display: flex; /* Make navbar a flex container */
-    justify-content: space-between; /* Align items horizontally */
-    align-items: center; /* Align items vertically */
-  }
-  
-  .user-info {
-    display: flex; /* Make user-info a flexbox as well */
-    align-items: center; /* Align content vertically */
-    margin: 0 10px; /* Adjust margin as needed */
-    flex-grow: 1; /* Allow user-info to grow and fill remaining space */
-  }
-
+.content {
+    margin-top: 80px;
+}
   
 @media (min-width: 1024px) {
     .contact-info__wrapper {
