@@ -25,6 +25,18 @@ body {
     background-color: rgba(0, 0, 0, 0.5); /* Ajusta este valor para oscurecer más o menos */
     z-index: 1;
 }
+.content-section {
+    padding: 20px;
+    height: 100%;
+}
+.content-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.content-section p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
 .hero-section .container {
     position: relative;
     z-index: 2;
