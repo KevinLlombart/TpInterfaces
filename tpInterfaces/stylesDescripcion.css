@@ -499,7 +499,7 @@ display: none;
     text-align: center; /* Centra el texto */
 }
 #about {
-    background: url('img/asp-net-curso.webp') no-repeat center center;
+    background: url('img/curso-gratis-introduccion-a-Csharp.jpg') no-repeat center center;
     background-size: cover;
     color: white; /* Cambia el color del texto para que sea legible sobre la imagen de fondo */
 }
