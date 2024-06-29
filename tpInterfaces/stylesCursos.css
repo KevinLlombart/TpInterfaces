@@ -1,0 +1,299 @@
+/* Estilos generales */
+.custom-navbar {
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navcontainer {
+    display: flex;
+    align-items: center;
+}
+
+.icono {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.navtitulo {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.custom-menu-icon {
+    display: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.custom-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.custom-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.seccion-iconos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.icon-text {
+    text-align: center;
+    max-width: 300px;
+    padding: 0 10px;
+}
+
+.icono-inf {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .seccion-iconos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .icono-inf {
+        width: 80px;
+        height: 80px;
+    }
+
+    .custom-navbar {
+        padding: 10px;
+    }
+
+    .custom-menu-icon {
+        display: block;
+    }
+
+    .custom-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .custom-links.show {
+        display: flex;
+    }
+
+    .custom-links a {
+        margin: 10px 0;
+    }
+}
+
+.subtitle-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.search-box {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.title-section {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.carousel-wrapper {
+    margin-top: 2rem;
+    position: relative;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+}
+
+
+.card-deck::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento en Chrome, Safari y Opera */
+}
+
+.slide-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1000;
+}
+.slide-left {
+    left: 0.5rem;
+}
+.slide-right {
+    right: 0.5rem;
+}
+
+.card-deck {
+    display: flex;
+    justify-content: center; /* Centra las cards horizontalmente */
+    margin: 0 auto; /* Centra el contenedor de cards */
+    max-width: 1200px; /* Establece un ancho máximo para el contenedor */
+    margin-right: 2000px;
+}
+
+.card {
+    margin-right: 10px; /* Espacio entre las cards */
+    width: 450px; /* Ancho de las cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para resaltar las cards */
+    border-radius: 8px; /* Borde redondeado */
+    width: 350px;
+}
+
+.card:last-of-type {
+    margin-right: 0; /* Elimina el margen derecho de la última card */
+}
+
+
+.card:last-of-type {
+    margin-right: 0; /* Elimina el margen derecho de la última card */
+}
+
+.carousel-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none; /* Prevents buttons from capturing mouse/touch events */
+}
+
+.btn {
+    pointer-events: auto; /* Restore pointer events for buttons */
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.prev-btn {
+    position: absolute;
+    left: 10px;
+}
+
+.next-btn {
+    position: absolute;
+    right: 10px;
+}
+
+.card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.btn {
+    text-decoration: none;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.arrow-prev,
+.arrow-next {
+    width: 30px;
+    height: auto;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.slide-icon {
+    width: 50px; /* Ajusta el tamaño de los iconos según sea necesario */
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icon-left {
+    left: -4rem; /* Ajusta la posición del icono izquierdo */
+}
+
+.icon-right {
+    right: -4rem; /* Ajusta la posición del icono derecho */
+}
+
+@media (max-width: 768px) {
+    .card-deck {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        justify-content: flex-start; /* Alineación de las cards al inicio */
+    }
+
+    .card {
+        flex: 0 0 auto; /* Ajuste automático del tamaño de las cards */
+        margin-right: 10px; /* Espacio entre las cards */
+        margin-bottom: 20px; /* Espacio inferior entre las cards */
+        width: 100%; /* Ancho completo en dispositivos móviles */
+    }
+
+    .arrow-right {
+        display: none; /* Oculta la flecha derecha en dispositivos móviles */
+    }
+
+    .navigation img {
+        width: 60px; /* Tamaño de imagen de navegación */
+        margin-left: 90px; /* Margen izquierdo de la imagen de navegación */
+    }
+}
+
+/* Media query para pantallas grandes */
+@media (min-width: 769px) {
+    .card {
+        flex: 0 0 calc(33.333% - 20px); /* Ancho dinámico para pantallas grandes */
+        margin-right: 10px; /* Espacio entre las cards */
+    }
+
+    .card:last-of-type {
+        margin-right: 0; /* Elimina el margen derecho de la última card */
+    }
+}

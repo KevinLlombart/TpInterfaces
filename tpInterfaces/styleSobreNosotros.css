@@ -65,3 +65,41 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+@media (max-width: 767px) {
+    .image-container {
+        overflow: hidden; /* Prevent scrollbar */
+    }
+    .image-container img {
+        width: 150%; /* Zoom effect */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        transform: scale(1.2); /* Optional additional zoom effect */
+    }
+}
+
+    .custom-menu-icon {
+        display: block;
+    }
+
+    .custom-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .custom-links.show {
+        display: flex;
+    }
+
+    .custom-links a {
+        margin: 10px 0;
+    }
+}

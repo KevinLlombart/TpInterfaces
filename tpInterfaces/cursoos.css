@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    ;
+}
+.card {
+    width: 80%;
+    padding: 2%;
+    border-color: white !important;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card-titulo {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.card-title:hover {
+    color: #1fbf92;
+    text-decoration: underline;
+    cursor:pointer;
+
+
+}
+
+.card-desc {
+    font-size: 15px;
+}
+
+.card-icon {
+    width:30%;
+}
+
+.card-deck {
+    display:flex;
+    justify-content: space-between;
+}
+
+.card-title, .card-text {
+    text-align: left;
+}
+
+.card-body {
+    background-color: #f2f2f2 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+h2{
+    padding-left: 5%;
+    font-weight: 800;
+}
+
+.btn {
+    color:white !important;
+    background-color: #1fbf92 !important;
+    font-weight: 600!important;
+}
+
+.btn:hover{
+    background-color: #89d9c2  !important;}
+    
+.cursos {
+    display: grid;
+    grid-template-columns: 1% 98% 1%;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.seccion-iconos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.icon-text {
+    text-align: center;
+    max-width: 300px;
+    padding: 0 10px;
+}
+
+.icono-inf {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.destacados {
+    margin-bottom: 50px; /* Ajusta el espacio entre cada conjunto de carruseles */
+    margin-top: 50px;
+}
+.card-img-top {
+    height: 300px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsionar */
+}
+@media (max-width: 768px) {
+    .card-deck {
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: auto; /* Permite deslizamiento horizontal */
+        -webkit-overflow-scrolling: touch; /* Mejora el deslizamiento en dispositivos iOS */
+        scroll-snap-type: x mandatory; /* Asegura que el deslizamiento sea suave */
+        scroll-padding: 0 20%; /* Ajusta el espacio a los lados para centrar la tarjeta */
+    }
+    .card-img-top {
+        height: 200px; /* Establece una altura fija para todas las imágenes */
+        object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsionar */
+    }
+    .card {
+        width: 80%; /* Ancho de la tarjeta */
+        margin: 0 10px; /* Espacio entre tarjetas */
+        flex: 0 0 auto; /* Evita que las tarjetas se estiren */
+        scroll-snap-align: center; /* Alineación de deslizamiento centrada */
+    }
+
+    .seccion-iconos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .icono-inf {
+        width: 80px;
+        height: 80px;
+    }
+}
