@@ -114,4 +114,65 @@ body {
     .custom-links a {
         margin: 10px 0;
     }
+
+.timeline-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px 0;
+}
+.card-space
+.timeline {
+    display: flex;
+    justify-content: space-around;
+}
+
+.timeline-item {
+    display: inline-block;
+    text-align: center;
+   color: #fff;
+    background: #0080ff;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.timeline-item h4 {
+    margin-bottom: 5px;
+}
+.insc-btn {
+    color:white !important;
+    background-color: #1fbf92 !important;
+    font-weight: 600!important;
+    
+}
+@media (min-width: 768px) {
+    .timeline-container {
+        display: none;
+    }
+}
+.navbar {
+    background-color: #042159;
+    color: white;
+}
+.custom-navbar .navbar-brand {
+    font-size: 24px;
+    /* Tamaño de la fuente personalizado */
+    font-weight: bold;
+   
+    /* Peso de la fuente personalizado */
+}
+
+.custom-navbar {
+    min-height: 100px;
+    /* Puedes ajustar este valor según tus necesidades */
+}
+
+.custom-navbar .signup {
+    margin-right: 20px;
+    /* Ajusta este valor según el espacio que desees */
+}
+
+.dropdown-menu {
+    background-color: #042159!important;
+    --bs-dropdown-link-hover-bg: #ffffff1e !important; 
 }

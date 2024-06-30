@@ -46,6 +46,10 @@ footer {
     min-height: 100px;
     /* Puedes ajustar este valor según tus necesidades */
 }
+hr {
+    border-top: 1px solid #000; /* Puedes ajustar el color y el grosor */
+    margin: 20px 0; /* Ajusta el margen según sea necesario */
+}
 
 .custom-navbar-height .navbar-brand,
 .custom-navbar-height .navbar-nav .nav-link,
@@ -559,11 +563,11 @@ display: none;
     }
 
     .unit-circle{
-        margin-left: 8.6rem;
+        margin-left: 8rem;
     }
 
     .unit-content ul li {
-        margin-left: 2rem;
+        margin-left: 0.4rem;
         justify-content: center;
     }
 
@@ -596,7 +600,7 @@ display: none;
         margin-top: 0.5em;
        
     }
-
+   
     .estrellas {
         justify-content: center;
         margin-bottom: 10px;
