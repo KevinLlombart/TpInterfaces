@@ -11,6 +11,11 @@
   input {
     font-family: 'Montserrat', sans-serif;
   }
+
+  .content {
+      margin-top: 60px;
+      margin-bottom: 60px;
+  }
   
   .container {
     position: relative;
@@ -270,7 +275,8 @@
   .container.sign-up-mode .right-panel {
     pointer-events: all;
   }
-  
+
+/* RESPONSIVE */  
   @media (max-width: 870px) {
     .container {
       min-height: 800px;
