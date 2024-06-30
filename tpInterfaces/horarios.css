@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    ;
+}
+
+
+.btn {
+    color: white !important;
+    background-color: #1fbf92 !important;
+    font-weight: 600 !important;
+}
+
+.btn:hover {
+    background-color: #89d9c2 !important;
+}
+
+.navbar {
+    background-color: #042159;
+    color: white;
+}
+
+.custom-navbar-height {
+    min-height: 100px;
+    /* Puedes ajustar este valor según tus necesidades */
+}
+
+.custom-navbar-height .navbar-brand,
+.custom-navbar-height .navbar-nav .nav-link,
+.custom-navbar-height .navbar-toggler {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.custom-navbar .navbar-brand {
+    font-size: 24px;
+    /* Tamaño de la fuente personalizado */
+    font-weight: bold;
+    /* Peso de la fuente personalizado */
+}
+
+.custom-navbar {
+    min-height: 100px;
+    /* Puedes ajustar este valor según tus necesidades */
+}
+
+.custom-navbar .signup {
+    margin-right: 20px;
+    /* Ajusta este valor según el espacio que desees */
+}
+
+.dropdown-menu {
+    background-color: #042159 !important;
+    --bs-dropdown-link-hover-bg: #ffffff1e !important;
+}
+
+
+.btn {
+    color: white !important;
+    background-color: #1fbf92 !important;
+    font-weight: 600 !important;
+}
+
+.btn:hover {
+    background-color: #89d9c2 !important;
+}
+
+.navbar-toggler {
+    display: none !important;
+}
+
+
+.conthorarios {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 3% 10% 10% 10%;
+}
+
+.cajahora {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    padding:2% 4%;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+
+
+
+@media (max-width: 767px) {
+
+    .navbar-toggler {
+        display: inherit !important;
+        ;
+    }
+
+}
