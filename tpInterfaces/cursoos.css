@@ -139,3 +139,43 @@ h2{
         height: 80px;
     }
 }
+
+.navbar {
+    background-color: #042159;
+    color: white;
+}
+
+.custom-navbar-height {
+    min-height: 100px;
+    /* Puedes ajustar este valor según tus necesidades */
+}
+
+.custom-navbar-height .navbar-brand,
+.custom-navbar-height .navbar-nav .nav-link,
+.custom-navbar-height .navbar-toggler {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.custom-navbar .navbar-brand {
+    font-size: 24px;
+    /* Tamaño de la fuente personalizado */
+    font-weight: bold;
+    /* Peso de la fuente personalizado */
+}
+
+.custom-navbar {
+    min-height: 100px;
+    /* Puedes ajustar este valor según tus necesidades */
+}
+
+.custom-navbar .signup {
+    margin-right: 20px;
+    /* Ajusta este valor según el espacio que desees */
+}
+
+.dropdown-menu {
+    background-color: #042159!important;
+    --bs-dropdown-link-hover-bg: #ffffff1e !important; 
+}

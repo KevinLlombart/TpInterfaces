@@ -213,17 +213,17 @@ h2 {
     cursor: pointer;
 }
 
-.navbar {
-    background-color: #042159;
-    color: white;
-}
-
 .last {
     border-left: 100px;
 }
 
 
 /* NAVBAR */
+
+.navbar {
+    background-color: #042159;
+    color: white;
+}
 
 .custom-navbar-height {
     min-height: 100px;
