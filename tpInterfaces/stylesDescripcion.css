@@ -662,7 +662,16 @@ display: none;
     margin-top: 20px; /* Some margin on top */
     border-radius: 5px; /* Rounded corners */
 }
+.navbar-toggler {
+    display: none !important;
+}
+@media (max-width: 767px) {
 
+    .navbar-toggler {
+        display: inherit !important;
+        ;
+    }
+}
 .error-message img {
     width: 30px; /* Set a specific width */
     height: 30px;
