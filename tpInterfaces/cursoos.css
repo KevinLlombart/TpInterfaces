@@ -80,7 +80,6 @@ h2{
     justify-content: space-around;
     margin-top: 2rem;
     padding: 1rem;
-    background-color: #f8f9fa;
     border-radius: 8px;
 }
 
@@ -104,6 +103,11 @@ h2{
     height: 300px; /* Establece una altura fija para todas las imágenes */
     object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsionar */
 }
+
+.titulo-cursos{
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
     .card-deck {
         display: flex;
@@ -137,6 +141,10 @@ h2{
     .icono-inf {
         width: 80px;
         height: 80px;
+    }
+
+    .titulo-cursos{
+        text-align: left;
     }
 }
 
