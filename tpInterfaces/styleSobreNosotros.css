@@ -161,7 +161,11 @@ body {
    
     /* Peso de la fuente personalizado */
 }
-
+.navbar-brand {
+    
+    text-align: center;
+    
+}
 .custom-navbar {
     min-height: 100px;
     /* Puedes ajustar este valor según tus necesidades */
