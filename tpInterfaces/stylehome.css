@@ -62,7 +62,9 @@
 
 }
 
-
+.insc-btn {
+    border-radius: 30px !important;
+}
 
 .about {
     display: flex;
@@ -93,7 +95,7 @@
 .card-title:hover {
     color: #1fbf92;
     text-decoration: underline;
-    cursor: pointer;
+    cursor:pointer;
 
 
 }
@@ -103,42 +105,40 @@
 }
 
 .card-icon {
-    width: 30%;
+    width:30%;
 }
 
 .card-deck {
-    display: flex;
+    display:flex;
     justify-content: space-between;
 }
 
-.card-title,
-.card-text {
+.card-title, .card-text {
     text-align: left;
 }
 
 .card-body {
-    background-color: #f2f2f2;
+    background-color: #f2f2f2 ;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 5px;
 }
 
-h2 {
+h2{
     padding-left: 5%;
     font-weight: 800;
 }
 
 .btn {
-    color: white !important;
+    color:white !important;
     background-color: #1fbf92 !important;
-    font-weight: 600 !important;
+    font-weight: 600!important;
 }
 
-.btn:hover {
-    background-color: #89d9c2 !important;
-}
-
+.btn:hover{
+    background-color: #89d9c2  !important;}
+    
 .cursos {
     display: grid;
     grid-template-columns: 1% 98% 1%;
@@ -147,9 +147,7 @@ h2 {
     padding-right: 2%;
 }
 
-.destacadosdos {
-    display: none;
-}
+
 
 .resenias {
     height: 80vh;
@@ -162,36 +160,33 @@ h2 {
 
 
 }
-
-.your-class {
+ .your-class {
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-
+  
+ }
 .coment {
-    width: 100%;
+    width:100%;
     text-align: center;
     padding: 1%;
-
+ 
 }
 
 .slick-initialized .slick-slide {
     display: flex !important;
     flex-direction: column !important;
 }
-
-.res-titulo {
+.res-titulo{
     font-weight: 500;
     font-size: 25px;
 }
 
-.res-subt {
-    font-size: 20px;
+.res-subt{
+    font-size: 20px; 
 }
 
-.res-img {
+.res-img{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,65 +200,120 @@ h2 {
 }
 
 
-.arrow-prev:hover,
-.arrow-next:hover,
-.fa-chevron-left:hover,
-.fa-chevron-right:hover {
-    color: #1fbf92;
-    cursor: pointer;
+.arrow-prev:hover, .arrow-next:hover,.fa-chevron-left:hover,.fa-chevron-right:hover{
+  color: #1fbf92;
+  cursor: pointer;
 }
 
 .navbar {
-    background-color: #042159;
-    color: white;
+    background-color: #042159 ;
+    color:white;
 }
 
-.last {
-    border-left: 100px;
+.last{
+   border-left: 100px;
 }
 
 
-/* NAVBAR */
-
-.custom-navbar-height {
-    min-height: 100px;
-    /* Puedes ajustar este valor según tus necesidades */
-}
-
-.custom-navbar-height .navbar-brand,
-.custom-navbar-height .navbar-nav .nav-link,
-.custom-navbar-height .navbar-toggler {
-    height: 100%;
+  /* NAVBAR */
+  .custom-navbar {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    background-color: #042159;
+    padding: 20px 20px; /* Ajuste aquí el padding para cambiar la altura */
 }
 
-.custom-navbar .navbar-brand {
+.custom-navbar .custom-title {
+    color: #fff;
     font-size: 24px;
-    /* Tamaño de la fuente personalizado */
-    font-weight: bold;
-    /* Peso de la fuente personalizado */
+    display: flex; /* Para alinear el ícono correctamente */
+    align-items: center; /* Alinea verticalmente el texto e ícono */
 }
 
-.custom-navbar {
-    min-height: 100px;
-    /* Puedes ajustar este valor según tus necesidades */
+.custom-navbar .icon-container {
+    margin-left: 10px; /* Espacio entre el título y el ícono */
 }
 
-.custom-navbar .signup {
-    margin-right: 20px;
-    /* Ajusta este valor según el espacio que desees */
+.custom-navbar, .icono {
+    height: 100px; /* Ajusta el tamaño del ícono según sea necesario */
 }
 
-.dropdown-menu {
-    background-color: #042159!important;
-    --bs-dropdown-link-hover-bg: #ffffff1e !important; 
+.custom-menu-icon {
+    display: none;
 }
 
+.custom-navbar .custom-links {
+    display: flex;
+    gap: 20px;
+}
 
-/* ---------------NAVBAR--------- */
+.custom-navbar .custom-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
 
-.footerimg {
+.custom-navbar .custom-links a:hover {
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .arrow-down {
+    margin-left: 5px;
+    color: #fff;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #042159;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #042159;
+}
+
+.icono {
+    width: 80px;
+    height:80px;
+}
+
+.navtitulo {
+    color:#fff;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.navcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+
+    
+}
+
+.footerimg{
     width: 50px;
     padding-left: 10%;
 }
@@ -273,54 +323,3 @@ footer {
 }
 
 
-<<<<<<< Updated upstream
-=======
-@media (max-width: 767px) {
-    /* Agrega tus estilos específicos para móviles aquí */
-
-    .about {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10%;
-        height: fit-content;
-        gap: 5%;
-    }
-
-
-
-    .destacados {
-        display: none;
-    }
-
-    .destacadosdos {
-        display: grid;
-        align-items: center;
-        justify-items: center;
-        grid-template-areas:
-            "titulo titulo titulo"
-            "flecha caja flechader";
-            padding:4%;
-    }
-
-    .grid2 {
-        grid-area: flecha;
-    }
-
-    .grid3 {
-        grid-area: flechader;
-    }
-
-    .cardres {
-        grid-area: caja;
-        width:fit-content;
-    }
-
-    .h3titulo {
-        grid-area: titulo;
-    }
-
-}
->>>>>>> Stashed changes
