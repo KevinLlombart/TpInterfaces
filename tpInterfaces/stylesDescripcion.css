@@ -595,7 +595,7 @@ display: none;
     }
    
     .estrellas {
-        justify-content: center;
+       
         margin-bottom: 10px;
     }
 
@@ -668,5 +668,7 @@ display: none;
     height: 30px;
     margin-right: 10px; /* Space between image and text */
 }
-
-
+.clasificacion label {
+    font-size: 4em; /* Ajusta el tamaño de las estrellas */
+    margin: 0;
+}
