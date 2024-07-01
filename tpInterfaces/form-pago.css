@@ -31,6 +31,7 @@ body{
     border: none !important;
 
 }
+
 /* NAVBAR */
 .navbar {
     background-color: #042159;
@@ -68,10 +69,9 @@ body{
 }
 
 .dropdown-menu {
-    background-color: #042159!important;
-    --bs-dropdown-link-hover-bg: #ffffff1e !important; 
+    background-color: #042159 !important;
+    --bs-dropdown-link-hover-bg: #ffffff1e !important;
 }
-
 
 
 /* RESPONSIVE */
