@@ -263,14 +263,6 @@ h2 {
 
 /* ---------------NAVBAR--------- */
 
-.footerimg {
-    width: 50px;
-    padding-left: 10%;
-}
-
-footer {
-    width: 90vw !important;
-}
 
 
 @media (max-width: 767px) {
