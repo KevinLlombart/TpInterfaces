@@ -70,7 +70,21 @@
     flex-wrap: nowrap;
     justify-content: space-around;
     padding: 10%;
-    height: 100vh;
+    height: 90vh;
+}
+
+.carda {
+    width: 80%;
+    padding: 2%;
+    border-color: white;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none ;
+    gap: 5% ;
 }
 
 .card {
@@ -81,10 +95,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:5%;
     text-align: center;
     border: none !important;
 }
+
 
 
 .card-titulo {
