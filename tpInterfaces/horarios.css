@@ -57,12 +57,6 @@
 }
 
 
-.btn {
-    color: white !important;
-    background-color: #1fbf92 !important;
-    font-weight: 600 !important;
-}
-
 .btn:hover {
     background-color: #89d9c2 !important;
 }
@@ -83,34 +77,34 @@
     background-color: #f2f2f2;
     display: flex;
     flex-direction: row;
-    padding:3% 4%;
+    padding: 3% 4%;
     justify-content: space-between;
-   align-items: center;
+    align-items: center;
     border-radius: 20px;
     font-size: smaller;
 }
 
-.cajabold{
+.cajabold {
     font-size: 20px;
     font-weight: 700;
 }
 
 .cajahora:hover {
-    box-shadow: 0px 0px 23px 6px #89d9c2 ;
--webkit-box-shadow: 0px 0px 23px 6px #89d9c2 ;
--moz-box-shadow: 0px 0px 23px 6px #89d9c2 ;
+    box-shadow: 0px 0px 23px 6px #89d9c2;
+    -webkit-box-shadow: 0px 0px 23px 6px #89d9c2;
+    -moz-box-shadow: 0px 0px 23px 6px #89d9c2;
 
 }
 
-.infocurso{
+.infocurso {
     color: white;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.6)),  url(https://hermes.dio.me/articles/cover/bd6044b7-8459-4d6a-a7cf-4cf5a334772b.jpg);
+            rgba(0, 0, 0, 0.6)), url(https://hermes.dio.me/articles/cover/bd6044b7-8459-4d6a-a7cf-4cf5a334772b.jpg);
     padding: 10%;
     background-position: center;
     background-size: cover;
     height: min-content;
-    gap:5%;
+    gap: 5%;
     border-radius: 20px;
 
 }
@@ -118,8 +112,8 @@
 
 .contenedor {
     display: grid;
-    grid-template-columns: 30% 65%;  
-  padding: 0 5%;
+    grid-template-columns: 30% 65%;
+    padding: 0 5%;
     gap: 5%;
 }
 
@@ -127,8 +121,8 @@
     font-weight: 700;
 }
 
-.volver{
-    color:#0785f2 ;
+.volver {
+    color: #0785f2;
     padding: 2% 5%;
     font-size: large;
     font-weight: 600;
@@ -136,7 +130,7 @@
 
 .volvertext:hover {
     text-shadow: 2px 2px 5px #b0bdc9;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 
@@ -152,17 +146,18 @@
         flex-direction: column;
         gap: 30px;
     }
-    
+
     .cajahora {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 100%;
         align-items: start;
-        padding:6%;
-        gap:15px;
+        padding: 6%;
+        gap: 20px;
+        width:100%;
     }
 
-    .btnhorario{
-        width: 195%;
-    }
 
+.btn {
+    width: 100%;
+}
 }
