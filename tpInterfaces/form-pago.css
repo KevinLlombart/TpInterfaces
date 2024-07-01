@@ -24,6 +24,13 @@ body{
     margin-bottom: 60px;
 }
 
+.btn {
+    color: white !important;
+    background-color: #1fbf92 !important;
+    font-weight: 600 !important;
+    border: none !important;
+
+}
 /* NAVBAR */
 .navbar {
     background-color: #042159;
