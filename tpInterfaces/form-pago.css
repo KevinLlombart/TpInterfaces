@@ -72,15 +72,7 @@ body{
     --bs-dropdown-link-hover-bg: #ffffff1e !important; 
 }
 
-/* FOOTER */
-.footerimg {
-    width: 50px;
-    padding-left: 10%;
-}
 
-footer {
-    width: 90vw !important;
-}
 
 /* RESPONSIVE */
   
