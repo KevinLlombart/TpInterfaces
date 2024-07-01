@@ -70,7 +70,7 @@
     flex-wrap: nowrap;
     justify-content: space-around;
     padding: 10%;
-    height: 100vh;
+    height: 80vh;
 }
 
 .card {
@@ -80,9 +80,10 @@
     border-radius: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
-
+    gap: 5%;
+    border: none !important;
 }
 
 .card-titulo {
@@ -256,8 +257,8 @@ h2 {
 }
 
 .dropdown-menu {
-    background-color: #042159!important;
-    --bs-dropdown-link-hover-bg: #ffffff1e !important; 
+    background-color: #042159 !important;
+    --bs-dropdown-link-hover-bg: #ffffff1e !important;
 }
 
 
@@ -267,6 +268,21 @@ h2 {
 
 @media (max-width: 767px) {
     /* Agrega tus estilos específicos para móviles aquí */
+
+
+    .landing {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(imagenes/landfoto.jpg);
+
+        background-size: cover;
+        background-position: 60% ;
+        height: fit-content;
+        padding-bottom: 10%;
+    }
+
+    .land-titulo { 
+        font-size: 40px;
+    }
 
     .about {
         display: flex;
@@ -292,7 +308,7 @@ h2 {
         grid-template-areas:
             "titulo titulo titulo"
             "flecha caja flechader";
-            padding:4%;
+        padding: 4%;
     }
 
     .grid2 {
@@ -305,11 +321,39 @@ h2 {
 
     .cardres {
         grid-area: caja;
-        width:fit-content;
+        width: fit-content;
     }
 
     .h3titulo {
         grid-area: titulo;
     }
+
+    .resenias{
+        padding:4%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .landing {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(imagenes/landfoto.jpg);
+        background-size: cover;
+        height: fit-content;
+        padding-bottom: 10%;
+    }
+
+    .about {
+        height: fit-content;
+        padding: 5%;
+        justify-content: space-between;
+    }
+
+    .card {
+        display: flex;
+        justify-content: space-between;
+    }
+
 
 }
