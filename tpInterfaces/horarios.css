@@ -90,9 +90,6 @@
     font-size: smaller;
 }
 
-.cajatitulo {
-}
-
 .cajabold{
     font-size: 20px;
     font-weight: 700;
@@ -148,6 +145,24 @@
     .navbar-toggler {
         display: inherit !important;
         ;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .cajahora {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding:6%;
+        gap:15px;
+    }
+
+    .btnhorario{
+        width: 195%;
     }
 
 }
