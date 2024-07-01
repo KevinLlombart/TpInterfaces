@@ -99,7 +99,7 @@
 .infocurso{
     color: white;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.6)),  url(/tpInterfaces/img/curso-gratis-introduccion-a-Csharp.jpg);
+    rgba(0, 0, 0, 0.6)),  url(https://hermes.dio.me/articles/cover/bd6044b7-8459-4d6a-a7cf-4cf5a334772b.jpg);
     padding: 10%;
     background-position: center;
     background-size: cover;
