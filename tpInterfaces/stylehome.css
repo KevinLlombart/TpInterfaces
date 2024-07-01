@@ -70,7 +70,7 @@
     flex-wrap: nowrap;
     justify-content: space-around;
     padding: 10%;
-    height: 80vh;
+    height: 100vh;
 }
 
 .card {
@@ -81,10 +81,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap:5%;
     text-align: center;
-    gap: 5%;
     border: none !important;
 }
+
 
 .card-titulo {
     font-weight: 800;
@@ -291,8 +292,7 @@ h2 {
         justify-content: space-between;
         align-items: center;
         padding: 10%;
-        height: fit-content;
-        gap: 5%;
+        gap: 20px;
     }
 
 
@@ -344,16 +344,6 @@ h2 {
         padding-bottom: 10%;
     }
 
-    .about {
-        height: fit-content;
-        padding: 5%;
-        justify-content: space-between;
-    }
-
-    .card {
-        display: flex;
-        justify-content: space-between;
-    }
 
 
 }
