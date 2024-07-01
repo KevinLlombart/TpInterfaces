@@ -108,7 +108,38 @@ h2{
     font-weight: bold;
 }
 
+
+/* FILTROS */
+
+.buscarcont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2% 5% 0% 5%;
+}
+
+.cajacat, .cajasearch {
+    width: 40%;
+}
+
+/*FILTROS FIN */
+
+
 @media (max-width: 768px) {
+
+
+    
+.buscarcont{
+    display: flex;
+    flex-direction: column;
+    padding: 2% 5% 0% 5%;
+    
+}
+
+.cajacat, .cajasearch {
+    width: 100%;
+}
+
     .card-deck {
         display: flex;
         justify-content: flex-start;
@@ -203,3 +234,4 @@ h2{
     background-color: #042159!important;
     --bs-dropdown-link-hover-bg: #ffffff1e !important; 
 }
+

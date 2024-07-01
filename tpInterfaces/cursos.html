@@ -56,20 +56,28 @@
       </div>
     </div>
   </nav>
-  <div class="container mt-4">
-    <div class="row justify-content-between">
-      <div class="buscador col-md-4">
-        <input type="text" class="form-control" id="searchInput" placeholder="Buscar curso...">
-      </div>
-      <div class="filtrador col-md-3">
-        <select class="form-select" id="filterSelect">
-          <option value="all">Todos</option>
-          <option value="backend">Backend</option>
-          <option value="frontend">Frontend</option>
-        </select>
-      </div>
+
+  <div class="buscarcont">
+    <div class="cajasearch">
+      <p style="color: #0785f2 ;">  <i class="fa-solid fa-magnifying-glass"></i> Buscar por nombre
+      </p>
+      <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Buscar..." aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    </div>
+    <div class="cajacat">
+      <p style="color: #0785f2 ;"><i class="fa-solid fa-table-list"></i> Filtrar por catgoria</p>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Categorías</option>
+        <option value="1">Todos</option>
+        <option value="2">FRONTEND</option>
+        <option value="3">BACKEND</option>
+      </select>
     </div>
   </div>
+  
+
+
   <div class="text-center mt-5">
     <h2 class="titulo-cursos">Transforma tu futuro con nuestros cursos: <br> aprende hoy, lidera mañana.</h2>
   </div>
