@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cursoos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav class="navbar  sticky-top navbar-expand-lg custom-navbar custom-navbar-height " data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="imagenes/iconohome.png" alt="Logo" width="50" height="50"
+                class="d-inline-block align-text-top">
+            CODECLASS
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Cursos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="cursos.html">Cursos BACKEND</a></li>
+                        <li><a class="dropdown-item" href="cursos.html">Cursos FRONTEND</a></li>
+                        <li><a class="dropdown-item" href="cursos.html">Todos los cursos</a></li>
+                        <li><a class="dropdown-item" href="misCursos.html">Mis cursos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item signup">
+                    <a class="nav-link " href="sobreNosotros.html">Sobre nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="btn insc-btn"><i class="fa-solid fa-user"></i> ¡Hola Usuario!</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4">
+  <div class="row justify-content-between">
+    <div class="buscador col-md-4">
+      <input type="text" class="form-control" id="searchInput" placeholder="Buscar curso...">
+    </div>
+    <div class="filtrador col-md-3">
+      <select class="form-select" id="filterSelect">
+        <option value="all">Todos</option>
+        <option value="backend">Backend</option>
+        <option value="frontend">Frontend</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+  <div class="text-center mt-5">
+    <h2 class="titulo-cursos">Continúa tu aprendizaje y alcanza nuevas metas</h2>
+  </div>
+
+    <div class="destacados">
+        <h2>Mis cursos</h2>
+        <section class="cursos">
+      
+          <div><i class="fa-solid fa-chevron-left"></i></div>
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="https://d3puay5pkxu9s4.cloudfront.net/curso/4495/800_imagen.jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Curso de PHP</h5>
+                <p class="card-text">En este curso de PHP aprenderás de forma práctica los conceptos básicos, las mejores
+                  técnicas, así como las librerías más populares y herramientas necesarias para programar de forma eficiente
+                  con este lenguaje de programación. </p>
+                <p class="card-text"><a href="#" class="btn insc-btn">Ver clases</a></p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="https://d3puay5pkxu9s4.cloudfront.net/curso/4294/800_imagen.jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Curso de Introduccion C# .NET</h5>
+                <p class="card-text">En este curso de curso de C# aprenderás a utilizar las herramientas de este lenguaje de
+                  programación, para llevar a cabo la creación de datos complejos, la definición de operaciones sobre los
+                  datos complejos e implementar múltiples patrones de diseño.</p>
+                <p class="card-text"><a href="#" class="btn insc-btn">Ver clases</a></p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="https://d3puay5pkxu9s4.cloudfront.net/curso/2960/800_imagen.jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Curso de CSS3</h5>
+                <p class="card-text">En este curso de CSS3 adquirirás las habilidades necesarias para otorgar a tus páginas
+                  web un aspecto distintivo, personalizado y atractivo. Explorarás la creación de animaciones y efectos
+                  interactivos personalizados, elevando estético y la experiencia del usuario en tus proyectos
+                  web.</p>
+                <p class="card-text"> <a href="#" class="btn insc-btn">Ver clases</a></p>
+              </div>
+            </div>
+          </div>
+          <div><i class="fa-solid fa-chevron-right"></i></div>
+        </section>
+      </div>
+
+
+     
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #042159">
+      <!-- Grid container -->
+      <div class="container">
+        <!-- Section: Links -->
+        <section class="mt-5">
+          <!-- Grid row-->
+          <div class="row text-center d-flex justify-content-center pt-5">
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Sobre Nosotros</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Cursos</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Inicio</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">Ayuda</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+       
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+        </section>
+        <!-- Section: Links -->
+  
+        <hr class="my-5" />
+  
+        <!-- Section: Text -->
+        <section class="mb-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <p>
+             
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- Section: Text -->
+  
+        <!-- Section: Social -->
+        <section class="text-center mb-5">
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </section>
+        <!-- Section: Social -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        © 2020 Copyright:
+        <a class="text-white" 
+           >CODECLASS</a
+          >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+ 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</body>
+</html>

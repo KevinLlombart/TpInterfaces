@@ -43,6 +43,7 @@
               <li><a class="dropdown-item" href="cursos.html">Cursos BACKEND</a></li>
               <li><a class="dropdown-item" href="cursos.html">Cursos FRONTEND</a></li>
               <li><a class="dropdown-item" href="cursos.html">Todos los cursos</a></li>
+              <li><a class="dropdown-item" href="misCursos.html">Mis cursos</a></li>
             </ul>
           </li>
           <li class="nav-item signup">
@@ -55,7 +56,20 @@
       </div>
     </div>
   </nav>
-
+  <div class="container mt-4">
+    <div class="row justify-content-between">
+      <div class="buscador col-md-4">
+        <input type="text" class="form-control" id="searchInput" placeholder="Buscar curso...">
+      </div>
+      <div class="filtrador col-md-3">
+        <select class="form-select" id="filterSelect">
+          <option value="all">Todos</option>
+          <option value="backend">Backend</option>
+          <option value="frontend">Frontend</option>
+        </select>
+      </div>
+    </div>
+  </div>
   <div class="text-center mt-5">
     <h2 class="titulo-cursos">Transforma tu futuro con nuestros cursos: <br> aprende hoy, lidera mañana.</h2>
   </div>

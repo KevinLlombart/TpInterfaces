@@ -146,7 +146,23 @@ h2{
     .titulo-cursos{
         text-align: left;
     }
+    .container .row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      #searchInput {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      #filterSelect {
+        width: calc(65% - 100px);
+        margin-left: auto;
+      }
+    
 }
+
 
 .navbar {
     background-color: #042159;
