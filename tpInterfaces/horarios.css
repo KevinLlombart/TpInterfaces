@@ -83,10 +83,19 @@
     background-color: #f2f2f2;
     display: flex;
     flex-direction: row;
-    padding:2% 4%;
+    padding:3% 4%;
     justify-content: space-between;
    align-items: center;
     border-radius: 20px;
+    font-size: smaller;
+}
+
+.cajatitulo {
+}
+
+.cajabold{
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .cajahora:hover {
@@ -109,9 +118,10 @@
 
 }
 
+
 .contenedor {
     display: grid;
-    grid-template-columns: 30% 70%;  
+    grid-template-columns: 30% 65%;  
   padding: 0 5%;
     gap: 5%;
 }
@@ -131,6 +141,7 @@
     text-shadow: 2px 2px 5px #b0bdc9;
     cursor:pointer;
 }
+
 
 @media (max-width: 767px) {
 
